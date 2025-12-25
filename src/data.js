@@ -1,4 +1,4 @@
-import HeroImage from "/assets/hero-img.webp";
+import HeroImage from "/assets/Group 7.png";
 
 const Image = {
   HeroImage,
@@ -14,7 +14,6 @@ import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 
@@ -76,13 +75,6 @@ export const listTools = [
     dad: "800",
   },
   {
-    id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
-  },
-  {
     id: 10,
     gambar: Tools10,
     nama: "Canva",
@@ -98,60 +90,56 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek1 from "/assets/proyek/sijalingga.png";
+import Proyek2 from "/assets/proyek/SabaChicken.png";
+import Proyek3 from "/assets/proyek/UmahSoto.png";
+import Proyek4 from "/assets/proyek/MBG-ku.png";
+import Proyek5 from "/assets/proyek/potofolio.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
+    nama: "Si-Jalingga",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    tools: ["HTML", "Tailwind", "Javascript", "PHP", "MySQL"],
     dad: "200",
+    href: "#",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
+    nama: "Company Profile: Saba-Chicken",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    tools: ["HTML", "Vanilla CSS", "Javascript"],
     dad: "300",
+    href: "https://sabachicken.com",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
+    nama: "Company Profile: Oemah Soto n Karedok Bu nur",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    tools: ["HTML", "Vanilla CSS", "Javascript"],
     dad: "400",
+    href: "https://umah-soto-n-karedok-bu-nur.netlify.app/",
   },
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Website Course",
+    nama: "MBG-ku",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    tools: ["HTML", "Tailwind CSS v4", "PHP", "MySQL"],
     dad: "500",
+    href: "#",
   },
   {
     id: 5,
     gambar: Proyek5,
     nama: "Web Portfolio",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
+    tools: ["HTML", "Tailwind CSS v4", "ReactJS", "Vite"],
     dad: "600",
-  },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Company Profile 2.0",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
-    dad: "700",
+    href: "#",
   },
 ];

@@ -1,47 +1,82 @@
 import Particles from "./components/Particles";
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
+import BlurText from "./components/BlurText";
+import RotatingText from "./components/RotatingText";
+import LogoLoop from "./components/LogoLoop";
+
+const handleAnimationComplete = () => {
+  console.log("Animation completed!");
+};
+
+// looptools
+const toolLogos = listTools.map((tool) => ({
+  src: tool.gambar,
+  alt: tool.nama,
+  title: tool.nama,
+  desk: tool.ket,
+}));
 
 function App() {
   return (
     <>
       <div>
-          <div className="fixed inset-0 -z-10 pointer-events-none">
-  <Particles
-    particleColors={['#ffffff']}
-    particleCount={150}
-    particleSpread={10}
-    speed={0.1}
-    particleBaseSize={80}
-    moveParticlesOnHover={false}
-  />
-</div>
-
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          <Particles
+            particleColors={["#ffffff"]}
+            particleCount={150}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={80}
+            moveParticlesOnHover={false}
+          />
+        </div>
       </div>
 
       {/* hero */}
       <div
-        className="hero relative grid md:grid-cols-2 pt-8 xl:gap-0 gap-6 grid-cols-1"
+        className="hero relative grid md:grid-cols-2 pt-10 xl:gap-0 gap-6 grid-cols-1"
         id="home"
       >
         <div className="animate__animated animate__fadeInUp animate__delay-3s">
-          <div className="flex items-center gap-3 mb-6 bg-zinc-700 w-fit p-4 rounded-2xl">
-            <img
-              src={DataImage.HeroImage}
-              className="w-10 rounded-md"
-              alt=""
-              loading="lazy"
-            />
-            <q>Kode yang mahal berawal dari kebingungan.</q>
+          <div className="flex gap-3 items-center">
+            <h1 className="bg-transparent text-xl font-medium text-white ">
+              I'm
+            </h1>
+            <div>
+              <RotatingText
+                texts={[
+                  "Informatics",
+                  "Student",
+                  "in",
+                  "UIN Saizu",
+                  "Purbalingga",
+                ]}
+                mainClassName="px-2 mb-2 sm:px-2 md:px-3 bg-violet-600 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 flex justify-center rounded-lg  font-semibold item-center"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={2000}
+              />
+            </div>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">
-            Hai, Im Hanifan Pangabekti
-          </h1>
+          <div>
+            <BlurText
+              text="Hanifan Pangabekti"
+              delay={500}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-5xl font-bold mb-2"
+            />
+          </div>
           <p className="text-base/loose mb-6 opacity-50">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-            maxime, natus consequatur et molestias consectetur nihil
-            reprehenderit tenetur magni esse veritatis aspernatur! Corrupti
-            officia debitis optio ab, aperiam hic vero.
+            A FrontEnd Developer with a strong interest in UI/UX Design. Like a
+            solving the problem by combining that.
           </p>
           <div className="flex  items-center sm:gap-4 gap-2">
             <a
@@ -58,71 +93,87 @@ function App() {
             </a>
           </div>
         </div>
-        <img
-          src={DataImage.HeroImage}
-          alt="hero Image"
-          className="w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-4s"
-        />
+        <div className="relative md:flex md:justify-end sm:pt-10">
+          <img
+            src={DataImage.HeroImage}
+            alt="hero Image"
+            className="
+       w-[320px]
+      sm:w-[380px]
+      md:w-[450px]
+      lg:w-[500px]
+      mx-auto md:mx-0
+
+      -translate-y-6
+      md:-translate-y-12
+      lg:-translate-y-16
+      drop-shadow-2xl
+        animate__animated animate__fadeInUp animate__delay-4s
+      "
+          />
+          {/* Glow */}
+          <div className="absolute -z-10 inset-0 bg-violet-600/30 blur-3xl rounded-full"></div>
+        </div>
       </div>
       {/* hero */}
 
       {/* about */}
-      <div className="about mt-32 py-10" id="about">
-        <div
-          className="xl:w-2/3 lg:3/4 w-full mx-auto bg-zinc-700 rounded-lg p-7"
+      <div className="about mt-32 py-5" id="about">
+        <h1
+          className="text-center text-4xl font-bold mb-2"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <img
-            src={DataImage.HeroImage}
-            alt=""
-            className="w-12 rounded-md mb-8 sm:hidden"
-            loading="lazy"
-          />
-          <p className="text-base mb-10">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quasi
-            amet consequatur quibusdam eos hic sed, inventore in voluptatum
-            incidunt culpa illum repellat odit, dolorem dolor blanditiis
-            reiciendis nemo harum. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit.
-          </p>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-6 ">
-              <div>
-                <h1 className="text-4xl mb-1">
-                  45 <span className="text-violet-500">+</span>
-                </h1>
-                <p>Project Ended</p>
-              </div>
-              <div>
-                <h1 className="text-4xl mb-1">
-                  4 <span className="text-violet-500">+</span>
-                </h1>
-                <p>Experience</p>
-              </div>
-            </div>
+          About Me
+        </h1>
+        <div
+          className="xl:w-2/3 lg:3/4 w-full mx-auto bg-transparent rounded-lg p-7"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div>
+            <p className="text-base mb-10 text-center">
+              Hello! Thank you for taking the time to visit my personal website.
+              Let me introduce myself. I'm Hanifan Pangabekti, a student in the
+              Information Systems Study Program at Prof. K.H. Saifuddin Zuhri
+              State Islamic University, Purbalingga. I am interested in and
+              focused on developing web applications that are not only
+              functional but also provide a comfortable and intuitive user
+              experience. My core skills include JavaScript and TypeScript, as
+              well as the use of modern frameworks such as React, Vite, and
+              Next.js. I am known as a fast learner and adaptable, especially in
+              dynamic and innovative work environments. In my work, I value team
+              collaboration. I blend well in teams, contribute technically, and
+              maintain a humble attitude by valuing every idea and input from my
+              colleagues. I believe that good communication is key to success in
+              various roles. I am accustomed to thinking effectively, being
+              flexible in the face of change, and always striving to deliver the
+              best results. Based on my experience, I have developed strong
+              analytical skills and leadership qualities. I'm enthusiastic about
+              working in a team and ready to make a real contribution to
+              achieving shared goals. I look forward to future collaboration
+              opportunities.
+            </p>
           </div>
         </div>
 
-        <div className="tools mt-32">
-          <h1
-            className="text-4xl/snug font-bold mb-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            Tools
-          </h1>
-          <p
-            className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="300"
-            data-aos-once="true"
-          >
-            Below are the tools that I usually use to create websites or designs
-          </p>
-          <div className="tools-box mt-14 grid lg-grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+        <div className="relative h-[400px] overflow-hidden w-screen left-1/2 -translate-x-1/2">
+          <LogoLoop
+            logos={toolLogos}
+            speed={120}
+            direction="left"
+            logoHeight={40}
+            gap={40}
+            hoverSpeed={0}
+            scaleOnHover
+            fadeOut
+            fadeOutColor="#000000"
+            ariaLabel="Tools & Technologies"
+            className="gap-4 border border-zinc-500 "
+          />
+        </div>
+        {/* <div className="tools mt-8">
+          <div className="tools-box grid lg-grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
             {listTools.map((tool) => (
               <div
                 className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-700 group"
@@ -145,12 +196,12 @@ function App() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       {/* about */}
 
       {/* project */}
-      <div className="project mt-32 py-10" id="project">
+      <div className="project pb-10" id="project">
         <h1
           className="text-center text-4xl font-bold mb-2"
           data-aos="fade-up"
@@ -178,7 +229,12 @@ function App() {
               data-aos-delay={project.dad}
               data-aos-once="true"
             >
-              <img src={project.gambar} alt="" loading="lazy" />
+              <img
+                src={project.gambar}
+                alt=""
+                loading="lazy"
+                className="hover:scale-105 transition-transform duration-300 ease-out rounded-lg"
+              />
               <div>
                 <h1 className="text-2xl font-bold my-4">{project.nama}</h1>
                 <p className="text-base/loose mb-4">{project.desk}</p>
@@ -194,7 +250,7 @@ function App() {
                 </div>
                 <div className="mt-8 text-center">
                   <a
-                    href="#"
+                    href={project.href}
                     className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
                   >
                     See Website
@@ -224,7 +280,7 @@ function App() {
           data-aos-delay="300"
           data-aos-once="true"
         >
-          Let's grow with me
+          Let's grow together
         </p>
         <form
           action="https://formsubmit.co/hanipanpangabekti@gmail.com"
