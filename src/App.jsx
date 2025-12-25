@@ -4,6 +4,7 @@ import { listTools, listProyek } from "./data";
 import BlurText from "./components/BlurText";
 import RotatingText from "./components/RotatingText";
 import LogoLoop from "./components/LogoLoop";
+import BackToTop from "./components/BackToTop";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -339,6 +340,7 @@ function App() {
         </form>
       </div>
       {/* contact */}
+      <BackToTop/>
     </>
   );
 }
