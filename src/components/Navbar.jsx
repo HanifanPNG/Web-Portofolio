@@ -29,7 +29,7 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <a href="#home" className="sm:text-lg text-base font-medium">
+          <a href="#home" className=" sm:text-lg text-base font-medium">
             Home
           </a>
         </li>

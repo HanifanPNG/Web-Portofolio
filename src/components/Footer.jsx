@@ -14,6 +14,9 @@ const Footer = () => {
         <a href="https://www.tiktok.com/@hanippn?_r=1&_t=ZS-92Vu3z4gE3E">
           <i className="ri-tiktok-fill ri-2x hover:text-black"></i>
         </a>
+        <a href="https://wa.me/6285878657632/">
+          <i className="ri-whatsapp-fill ri-2x hover:text-green-600"></i>
+        </a>
       </div>
       <div className="flex gap-7">
         <a href="#home">Home</a>

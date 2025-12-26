@@ -49,11 +49,8 @@ function App() {
                 texts={[
                   "Informatics",
                   "Student",
-                  "in",
-                  "UIN Saizu",
-                  "Purbalingga",
                 ]}
-                mainClassName="px-2 mb-2 sm:px-2 md:px-3 bg-violet-600 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 flex justify-center rounded-lg  font-semibold item-center"
+                mainClassName="px-2 mb-2 sm:px-2 md:px-3 rounded-md bg-violet-600 text-white overflow-hidden py-0.5 sm:py-1 md:py-2 flex justify-center font-semibold item-center"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -90,7 +87,7 @@ function App() {
               href="#project"
               className=" bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-500"
             >
-              My Project <i className="ri-arrow-down-line ri-lg px-0.5"></i>
+              Project <i className="ri-arrow-down-line ri-lg px-0.5"></i>
             </a>
           </div>
         </div>
@@ -133,24 +130,17 @@ function App() {
           data-aos-duration="1000"
         >
           <div>
-            <p className="text-base mb-10 text-center">
+            <p className="text-base mb-10 sm:text-center text-start">
               Hello! Thank you for taking the time to visit my personal website.
               Let me introduce myself. I'm Hanifan Pangabekti, a student in the
               Information Systems Study Program at Prof. K.H. Saifuddin Zuhri
               State Islamic University, Purbalingga. I am interested in and
               focused on developing web applications that are not only
               functional but also provide a comfortable and intuitive user
-              experience. My core skills include JavaScript and TypeScript, as
-              well as the use of modern frameworks such as React, Vite, and
-              Next.js. I am known as a fast learner and adaptable, especially in
-              dynamic and innovative work environments. In my work, I value team
-              collaboration. I blend well in teams, contribute technically, and
-              maintain a humble attitude by valuing every idea and input from my
-              colleagues. I believe that good communication is key to success in
+              experience. I believe that good communication is key to success in
               various roles. I am accustomed to thinking effectively, being
               flexible in the face of change, and always striving to deliver the
-              best results. Based on my experience, I have developed strong
-              analytical skills and leadership qualities. I'm enthusiastic about
+              best results. I'm enthusiastic about
               working in a team and ready to make a real contribution to
               achieving shared goals. I look forward to future collaboration
               opportunities.
@@ -209,7 +199,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          My Project
+          Project
         </h1>
         <p
           className="text-base/loose text-center opacity-50"
@@ -224,7 +214,7 @@ function App() {
           {listProyek.map((project) => (
             <div
               key={project.id}
-              className="p-4 bg-zinc-700 rounded-md"
+              className="p-4 bg-white/10 border border-white/30 rounded-md"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={project.dad}
@@ -249,13 +239,22 @@ function App() {
                     </p>
                   ))}
                 </div>
-                <div className="mt-8 text-center">
-                  <a
-                    href={project.href}
-                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
-                  >
-                    See Website
-                  </a>
+                <div className="mt-8 text-center flex justify-center items-center gap-6">
+                  <div className="bg-gradient-to-r from-violet-700 via-violet-600 to-violet-500 rounded-full p-2 hover:bg-gradient-to-r hover:from-violet-500 hover:via-violet-600 hover:to-violet-700">
+                    <a
+                      href={project.sc}
+                    >
+                      Source Code <i class="fa-brands fa-github text-xl ml-1"></i> 
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-500 rounded-full p-2 hover:bg-gradient-to-r hover:from-zinc-500 hover:via-zinc-600 hover:to-zinc-700">
+                    <a
+                      href={project.href}
+                    >
+                    <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-1"></i> See Website 
+                    </a>
+
+                  </div>
                 </div>
               </div>
             </div>

@@ -101,10 +101,11 @@ export const listProyek = [
     id: 1,
     gambar: Proyek1,
     nama: "Si-Jalingga",
-    desk: "Sistem Informasi Jalan Purbalingga, a system for mapping damaged roads and complaints for the Purbalingga community",
+    desk: "Sistem Informasi Jalan Purbalingga, collaboration with teamwork a system for mapping damaged roads",
     tools: ["HTML", "Tailwind", "Javascript", "PHP", "MySQL"],
     dad: "200",
     href: "#",
+    sc:"#",
   },
   {
     id: 2,
@@ -114,6 +115,7 @@ export const listProyek = [
     tools: ["HTML", "Vanilla CSS", "Javascript"],
     dad: "300",
     href: "https://sabachicken.com",
+    sc:"#",  
   },
   {
     id: 3,
@@ -123,15 +125,17 @@ export const listProyek = [
     tools: ["HTML", "Vanilla CSS", "Javascript"],
     dad: "400",
     href: "https://umah-soto-n-karedok-bu-nur.netlify.app/",
+    sc:"#",
   },
   {
     id: 4,
     gambar: Proyek4,
     nama: "MBG-ku",
-    desk: "final assignment from web programming course, with a system to help MBG program to be more transparent in its performance",
+    desk: "final assignment from web programming course, with collaboration teamwork a system to help MBG program to be more transparent in its performance",
     tools: ["HTML", "Tailwind CSS v4", "PHP", "MySQL"],
     dad: "500",
     href: "#",
+    sc:"https://github.com/HanifanPNG/project-mbg",
   },
   {
     id: 5,
@@ -141,5 +145,6 @@ export const listProyek = [
     tools: ["HTML", "Tailwind CSS v4", "ReactJS", "Vite", "reactBits"],
     dad: "600",
     href: "#",
+    sc:"https://github.com/HanifanPNG/Web-Portofolio",
   },
 ];
