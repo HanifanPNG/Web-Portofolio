@@ -148,3 +148,16 @@ export const listProyek = [
     sc:"https://github.com/HanifanPNG/Web-Portofolio",
   },
 ];
+
+export const listOrganisasi = [
+  {
+    id: 1,
+    nama: "Himpunan Mahasiswa Informatika UIN Saizu",
+    jabatan: "Staff Dept Pengembangan sumber daya Mahasiswa",
+    periode: "2025 – 2026",
+    deskripsi:
+      "Bertanggung jawab dalam pengelolaan konten media sosial, desain publikasi, serta dokumentasi kegiatan organisasi.",
+    delay: 0,
+  },
+];
+
