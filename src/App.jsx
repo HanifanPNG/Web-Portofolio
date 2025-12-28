@@ -122,7 +122,7 @@ function App() {
         {/* hero */}
 
         {/* about */}
-        <div className="about mt-32 py-5" id="about">
+        <div className="about mt-32" id="about">
           <h1
             className="text-center text-4xl font-bold mb-2"
             data-aos="fade-up"
@@ -134,8 +134,7 @@ function App() {
             className="xl:w-2/3 lg:3/4 w-full mx-auto bg-transparent rounded-lg p-7"
             data-aos="fade-up"
             data-aos-duration="1000"
-          >
-            <div>
+          >    
               <p className="text-base mb-10 sm:text-center text-start">
                 Hello! Thank you for taking the time to visit my personal
                 website. Let me introduce myself. I'm Hanifan Pangabekti, a
@@ -151,7 +150,6 @@ function App() {
                 achieving shared goals. I look forward to future collaboration
                 opportunities.
               </p>
-            </div>
           </div>
 
           <div className="relative h-[400px] overflow-hidden w-screen left-1/2 -translate-x-1/2">
@@ -169,53 +167,18 @@ function App() {
               className="gap-4 border border-zinc-500 "
             />
           </div>
-          {/* <div className="tools mt-8">
-          <div className="tools-box grid lg-grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-            {listTools.map((tool) => (
-              <div
-                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-700 group"
-                key={tool.id}
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={tool.dad}
-                data-aos-once="true"
-              >
-                <img
-                  src={tool.gambar}
-                  alt="tools-image"
-                  className="w-14 bg-zinc-700 p-1 group-hover:bg-zinc-900"
-                  loading="lazy"
-                />
-                <div>
-                  <h4 className="font-bold">{tool.nama}</h4>
-                  <p className="opacity-50">{tool.ket}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
         </div>
         {/* about */}
 
-        {/* organisasi */}
+        {/* orexperience and leadership */}
         <div className="organisasi py-5" id="organisasi">
           <h1
-            className="text-center text-4xl font-bold mb-2"
+            className="text-center text-4xl font-bold mb-2 py-6"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Organizational Experience
+            Experience & Leadership
           </h1>
-
-          <p
-            className="text-base/loose text-center opacity-50 mb-12"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            Experiences that shaped my teamwork, leadership, and communication
-            skills.
-          </p>
 
           <div className="max-w-4xl mx-auto grid gap-6">
             {listOrganisasi.map((org) => (
@@ -227,16 +190,17 @@ function App() {
                 data-aos-delay={org.delay}
                 data-aos-once="true"
               >
+                <div className="py-1">
+                  <i className="ri-map-pin-line text-sm opacity-50"><span className="px-2">{org.at}</span></i>
+                </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
                   <h2 className="text-xl font-bold">{org.nama}</h2>
                   <span className="text-sm opacity-60">{org.periode}</span>
                 </div>
-
                 <p className="font-semibold text-violet-400 mb-2">
                   {org.jabatan}
                 </p>
-
-                <p className="text-base/loose opacity-80">{org.deskripsi}</p>
+                <p className="text-base font-light opacity-70">{org.deskripsi}</p>
               </div>
             ))}
           </div>

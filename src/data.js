@@ -152,11 +152,29 @@ export const listProyek = [
 export const listOrganisasi = [
   {
     id: 1,
-    nama: "Himpunan Mahasiswa Informatika UIN Saizu",
-    jabatan: "Staff Dept Pengembangan sumber daya Mahasiswa",
+    nama: "UIN Saizu Informatics Student Association",
+    at: "UIN Prof K.H Saiffudin Zuhri Purbalingga",
+    jabatan: "Student Resource Development Department Staff",
     periode: "2025 – 2026",
-    deskripsi:
-      "Bertanggung jawab dalam pengelolaan konten media sosial, desain publikasi, serta dokumentasi kegiatan organisasi.",
+    deskripsi: "Responsible for developing information technology resources in the academic field",
+    delay: 0,
+  },
+  {
+    id: 2,
+    nama: "Webinar Carrer IT",
+    at: "UIN Prof K.H Saiffudin Zuhri Purbalingga",
+    jabatan: "Event chairpersonent",
+    periode: "April 24, 2025",
+    deskripsi: "lead, coordinate, and take full responsibility for the entire series of events",
+    delay: 0,
+  },
+  {
+    id: 3,
+    nama: "collaboration day event",
+    at: "UIN Prof K.H Saiffudin Zuhri Purbalingga",
+    jabatan: "collaboration day event division coordinator",
+    periode: "August 30-32, 2025",
+    deskripsi: "plan, organize, and oversee all event details from start to finish, ensuring that the event runs smoothly, stays within budget, and achieves its objectives",
     delay: 0,
   },
 ];
