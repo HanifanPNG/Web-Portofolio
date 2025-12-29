@@ -162,7 +162,7 @@ export const listOrganisasi = [
   {
     id: 2,
     nama: "Webinar Carrer IT",
-    at: "UIN Prof K.H Saiffudin Zuhri Purbalingga",
+    at: "Kampus II UIN Prof K.H Saiffudin Zuhri Purbalingga",
     jabatan: "Event chairpersonent",
     periode: "April 24, 2025",
     deskripsi: "lead, coordinate, and take full responsibility for the entire series of events",
@@ -171,11 +171,33 @@ export const listOrganisasi = [
   {
     id: 3,
     nama: "collaboration day event",
-    at: "UIN Prof K.H Saiffudin Zuhri Purbalingga",
+    at: "Kampus II UIN Prof K.H Saiffudin Zuhri Purbalingga",
     jabatan: "collaboration day event division coordinator",
     periode: "August 30-32, 2025",
     deskripsi: "plan, organize, and oversee all event details from start to finish, ensuring that the event runs smoothly, stays within budget, and achieves its objectives",
     delay: 0,
   },
 ];
+
+import certiv1 from "/public/assets/certiv/pesoma.jpeg";
+import certiv2 from "/public/assets/certiv/hackaton.jpeg";
+
+export const  certificates = [
+  {
+    id:1,
+    title:"2nd Place in Robotic Innovation",
+    issuer:"Pesoma UIN SAIZU",
+    year:"2025",
+    image: certiv1,
+    at:"Kampus II UIN Prof K.H Saiffudin Zuhri Purbalingga"
+  },
+  {
+    id:2,
+    title:"Invest 2025 Hackathon Participants",
+    issuer:"Informatika Innovation the best 2025",
+    year:"2025",
+    image: certiv2,
+    at:"Kampus II UIN Prof K.H Saiffudin Zuhri Purbalingga"
+  },
+]
 

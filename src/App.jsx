@@ -7,6 +7,7 @@ import LogoLoop from "./components/LogoLoop";
 import BackToTop from "./components/BackToTop";
 import ClickSpark from "./components/ClickSpark";
 import { listOrganisasi } from "./data";
+import CertificatesSection from "./components/certif";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -207,6 +208,10 @@ function App() {
         </div>
         {/* organisasi */}
 
+        {/* certivited */}
+        <CertificatesSection/>
+        {/* certivited */}
+
         {/* project */}
         <div className="project mt-32 pb-10" id="project">
           <h1
@@ -264,7 +269,7 @@ function App() {
                     </div>
                     <div className="bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-500 rounded-full p-2 hover:bg-gradient-to-r hover:from-zinc-500 hover:via-zinc-600 hover:to-zinc-700">
                       <a href={project.href}>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-1"></i>{" "}
+                        <i className="fa-solid fa-arrow-up-right-from-square text-lg mr-1"></i>{" "}
                         See Website
                       </a>
                     </div>
