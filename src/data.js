@@ -33,13 +33,6 @@ export const listTools = [
     dad: "200",
   },
   {
-    id: 3,
-    gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
-    dad: "300",
-  },
-  {
     id: 4,
     gambar: Tools4,
     nama: "Tailwind CSS",
@@ -95,6 +88,8 @@ import Proyek2 from "/assets/proyek/SabaChicken.png";
 import Proyek3 from "/assets/proyek/UmahSoto.png";
 import Proyek4 from "/assets/proyek/MBG-ku.png";
 import Proyek5 from "/assets/proyek/potofolio.png";
+import Proyek6 from "/assets/proyek/blububooth.png";
+import Proyek7 from "/assets/proyek/cinemax.png";
 
 export const listProyek = [
   {
@@ -146,6 +141,26 @@ export const listProyek = [
     dad: "600",
     href: "#",
     sc:"https://github.com/HanifanPNG/Web-Portofolio",
+  },
+  {
+    id: 6,
+    gambar: Proyek6,
+    nama: "Web PhotoBooth",
+    desk: "simple photobooth web with html 5, tailwindCss and javascript.",
+    tools: ["HTML", "TailwindCss", "Vanila Javascript"],
+    dad: "700",
+    href: "https://blububooth.vercel.app/",
+    sc:"https://github.com/HanifanPNG/Blububooth",
+  },
+  {
+    id:7 ,
+    gambar: Proyek7,
+    nama: "CineMax Web Movie",
+    desk: "Web For Wathcing Movie like netflix.",
+    tools: ["TailwindCss", "React", "vite", "IMDb"],
+    dad: "700",
+    href: "https://cinemax-webmovie.vercel.app/",
+    sc:"https://github.com/HanifanPNG/CineMax-Web-movie",
   },
 ];
 
