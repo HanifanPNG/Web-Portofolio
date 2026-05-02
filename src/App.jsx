@@ -85,7 +85,8 @@ function App() {
             </p>
             <div className="flex  items-center sm:gap-4 gap-2">
               <a
-                href=""
+                href="../public/CV Hanifan Pangabekti.pdf"
+                download
                 className=" bg-violet-700 p-4 rounded-2xl hover:bg-violet-500"
               >
                 Download CV <i className="ri-download-2-fill ri-lg px-0.5"></i>
